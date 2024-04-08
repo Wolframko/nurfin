@@ -51,19 +51,13 @@ html {
   }
 }
 
-.bottom-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 #info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 #navbar {
-    display: flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
@@ -79,10 +73,10 @@ html {
   line-height: 110%; /* 19.8px */
 }
 .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .contact .phone h3 {
   font-weight: bold;
@@ -105,4 +99,244 @@ html {
 .contact .request button {
   background: white;
   color: blue;
+}
+
+/* footer */
+.footer {
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 60px 17px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+.footer-content {
+  display: flex;
+  margin-top: 7px;
+  width: 1245px;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.search-bar {
+  display: grid;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 1fr 70%;
+}
+
+@media (max-width: 991px) {
+  .search-bar {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+.logo {
+  margin: auto 0;
+}
+
+.search-input {
+  font-size: 14px;
+  color: #79a6c3;
+  font-weight: 400;
+  line-height: 110%;
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  gap: 18px;
+  padding: 10px 11px;
+}
+
+@media (max-width: 991px) {
+  .search-input {
+    flex-wrap: wrap;
+  }
+}
+
+.search-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 28px;
+}
+
+.search-text {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .search-text {
+    max-width: 100%;
+  }
+}
+
+.contact-info {
+  display: grid;
+  margin-top: 75px;
+  gap: 20px;
+    grid-template-columns: 1fr 70%;
+}
+
+@media (max-width: 991px) {
+  .contact-info {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+    margin-top: 40px;
+  }
+}
+
+.contact-details {
+  display: flex;
+  margin-top: 4px;
+  flex-direction: column;
+}
+
+.phone-number {
+  color: #0000de;
+  font: 700 37px/110% Ubuntu, sans-serif;
+}
+
+.email {
+  color: #6e9bb8;
+  margin-top: 12px;
+  font: 400 12px/110% Ubuntu, sans-serif;
+}
+
+.address {
+  color: #0000de;
+  margin-top: 50px;
+  font: 400 18px/110% Ubuntu, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .address {
+    margin-top: 40px;
+  }
+}
+
+.working-hours {
+  color: #6e9bb8;
+  margin-top: 11px;
+  font: 400 12px/110% Ubuntu, sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 47px;
+  gap: 10px;
+  padding: 0 1px;
+}
+
+@media (max-width: 991px) {
+  .social-icons {
+    margin-top: 40px;
+  }
+}
+
+.social-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 43px;
+}
+.bottom-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+@media (max-width: 991px) {
+    .bottom-nav {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+.bottom-nav-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #000;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.bottom-nav-title {
+  color: #0000de;
+  font: 20px Ubuntu, sans-serif;
+}
+
+.bottom-nav-link {
+  font-family: Ubuntu, sans-serif;
+  margin-top: 43px;
+}
+
+@media (max-width: 991px) {
+  .bottom-nav-link {
+    margin-top: 40px;
+  }
+}
+
+.additional-info-title {
+  color: #6e9bb8;
+  margin-top: 70px;
+  font: 700 12px/110% Ubuntu, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .additional-info-title {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.additional-info-text {
+  color: #6e9bb8;
+  margin-top: 16px;
+  font: 400 12px/13px Ubuntu, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .additional-info-text {
+    max-width: 100%;
+    margin-right: 8px;
+  }
+}
+
+.footer-bottom {
+  align-self: start;
+  display: flex;
+  margin-top: 64px;
+  gap: 20px;
+  font-size: 12px;
+  color: #6e9bb8;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+@media (max-width: 991px) {
+  .footer-bottom {
+    margin-top: 40px;
+  }
+}
+
+.copyright {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.privacy-policy {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
 }
