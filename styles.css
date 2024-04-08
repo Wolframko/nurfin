@@ -1,8 +1,7 @@
-.small-text,
-small-text a,
-small-text a:hover,
-small-text a:visited,
-small-text a:active {
+a,
+a:hover,
+a:visited,
+a:active {
   color: #6e9bb8;
   font-family: Ubuntu;
   text-decoration: none;
@@ -18,74 +17,211 @@ html {
   padding: 0;
 }
 
-.header,
-.footer {
-  background: #f0f4f8;
-}
-
-.footer {
-  height: 60vh;
-}
-
-.content-container {
-  width: 65vw;
+.container {
   margin: auto;
+  width: 70vw;
 }
-
-.parent {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-@media (max-width: 600px) {
-  .div1 {
-    visibility: hidden;
-  }
-
-  .parent {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
   }
 }
 
-#info {
+/* header */
+.investment-finance-company {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.buttons button {
-  background: none;
+.header {
+  display: flex;
+  max-width: 100%;
+  gap: 20px;
+  font-size: 12px;
+  color: #6e9bb8;
+}
+
+@media (max-width: 991px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+.company-name {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  margin: auto 0;
+}
+
+.location {
+  display: flex;
+  gap: 6px;
+}
+
+.location-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 16px;
+}
+
+.city-name {
+  font-family: Ubuntu, sans-serif;
+  margin: auto 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  margin: auto 0;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+}
+
+.nav-link {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+}
+
+.nav-link-halal {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .contact-info {
+    white-space: initial;
+  }
+}
+
+.contact-text {
+  font-family: Ubuntu, sans-serif;
+  margin: auto 0;
+}
+
+.language-selector {
+  font-family: Ubuntu, sans-serif;
+  border-radius: 2px;
+  background-color: #fff;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+@media (max-width: 991px) {
+  .language-selector {
+    white-space: initial;
+  }
+}
+
+.header-divider {
+  background-color: #cbd8e9;
+  margin-top: 18px;
+  max-width: 100%;
+  height: 1px;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 30px;
+  max-width: 100%;
+  align-items: start;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .main-content {
+    flex-wrap: wrap;
+  }
+}
+
+.investment-options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #0000de;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .investment-options {
+    max-width: 100%;
+    flex-wrap: wrap;
+    white-space: initial;
+  }
+}
+
+.investment-image {
+  aspect-ratio: 5;
+  object-fit: auto;
+  object-position: center;
+  width: 228px;
+  align-self: stretch;
+}
+
+.top-nav-link {
   color: #0000de;
   font-family: Ubuntu;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 19.8px */
-}
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact .phone h3 {
-  font-weight: bold;
-  color: blue;
+  align-self: stretch;
+  margin: auto 0;
 }
 
-.contact .account button {
-  border-radius: 20px 0px;
-  background: #0000de;
+.phone-number {
+  align-self: stretch;
+  display: flex;
+  gap: 4px;
+  font-size: 16px;
+  color: #0000de;
+  font-weight: 700;
+  margin: auto 0;
+}
+
+.phone-number-text {
+  font-family: Ubuntu, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 0;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.find-icon {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 24px;
+  margin: auto 0;
+}
+
+.personal-account-link {
+  border-radius: 20px 0;
+  background-color: #0000de;
   color: #fff;
   text-align: center;
   font-family: Ubuntu;
@@ -93,17 +229,36 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 110%; /* 15.4px */
-  padding: 14px 20px 14px 20px;
+  justify-content: center;
+  padding: 19px 30px;
 }
 
-.contact .request button {
-  background: white;
-  color: blue;
+@media (max-width: 991px) {
+  .personal-account-link {
+    padding: 0 20px;
+  }
 }
 
+.online-application-link {
+  font-family: Ubuntu, sans-serif;
+  border-radius: 20px 0;
+  background-color: #fff;
+  color: #0000de;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 19px 29px;
+}
+
+@media (max-width: 991px) {
+  .online-application-link {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
 /* footer */
 .footer {
   background-color: #f0f4f8;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,10 +273,16 @@ html {
 
 .footer-content {
   display: flex;
+  width: 70vw;
   margin-top: 7px;
-  width: 1245px;
   max-width: 100%;
   flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .footer-content {
+    width: 100%;
+  }
 }
 
 .search-bar {
@@ -184,7 +345,7 @@ html {
   display: grid;
   margin-top: 75px;
   gap: 20px;
-    grid-template-columns: 1fr 70%;
+  grid-template-columns: 1fr 70%;
 }
 
 @media (max-width: 991px) {
@@ -251,16 +412,16 @@ html {
   width: 43px;
 }
 .bottom-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 @media (max-width: 991px) {
-    .bottom-nav {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
+  .bottom-nav {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
+}
 .bottom-nav-links {
   display: flex;
   flex-direction: column;
